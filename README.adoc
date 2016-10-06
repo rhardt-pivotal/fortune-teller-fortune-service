@@ -1,2 +1,25 @@
-# READ ME
-please read me
+# Cloud Foundry Fortune Teller
+
+This is a small Spring Boot apps that returns a random fortune
+
+## Usage
+* build
++
+----
+mvn clean package
+----
++
+* push to Cloud Foundry
++
+----
+cf push
+----
++
+
+
+## Details
+This is taken from the https://github.com/Pivotal-Field-Engineering/s1p2016-lab[SpringOne Platform demo of Spring Cloud Services]
+It is a small Spring Boot app that connects to a Postgres/MySQL database
+and dispenses fortunes at the `/random` endpoint.
+
+This is part of a suite of demos for the https://github.com/rhardt-pivotal/sidecar-buildpack[Sidecar Buildpack]
