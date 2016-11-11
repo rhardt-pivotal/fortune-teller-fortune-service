@@ -47,4 +47,17 @@ spring:
 spring:
   profiles: pws
   jpa:
-    database: POSTGRESQL
+    database: MYSQL
+eureka:
+  instance:
+    hostname: ${vcap.application.uris[0]}
+    nonSecurePort: 80
+
+
+---
+spring:
+  profiles: cloud
+eureka:
+  instance:
+    hostname: ${vcap.application.uris[0]}
+    nonSecurePort: 80
